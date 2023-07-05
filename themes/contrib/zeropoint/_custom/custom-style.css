@@ -1,0 +1,709 @@
+/********************/
+/* CUSTOM STYLE CSS */
+/********************/
+/*
+Put your custom css and css overrides in this file and back it up to keep
+the changes when upgrading to a new version of this theme.
+
+Steps to customize your theme:
+1. Add your custom css to this file;
+2. Uncomment different examples below and modify data as you wish;
+3. Clear cached data at /admin/config/development/performance or "Flush all
+   caches" in Admin Menu and then press CTRL+F5;
+4. Don't forget to save a copy of this file with a different name to avoid
+   loosing it after a theme update.
+*/
+
+
+/* Erase or comment the lines below to get rid of the image in the right
+   sidebar and the brand image at the bottom */
+#middlecontainer {
+  /*background: transparent url(../images/_sidebarimg.png) 99% 99% no-repeat;*/
+}
+/*#brand {
+	background: url(../images/_brand.png) 50% 0 no-repeat;
+	margin: 0 auto 1em;
+	height: 50px;
+}*/
+
+
+/******* THEMER STYLE *******/
+/* Put here your custom CSS */
+/****************************/
+
+/*
+#top_bg, .themed-block {
+	background-color: #fff;
+	background-image: -webkit-linear-gradient(bottom, yellow 0%, #fff 150px);
+	background-image: linear-gradient(to top, yellow 0%, #fff 150px);
+}
+#section2 {
+	background-color: #fff;
+	background-image: -webkit-linear-gradient(bottom, #fff 0%, yellow 100px);
+	background-image: linear-gradient(to top, #fff 0%, yellow 100px);
+}
+.region-highlighted {
+	border: solid 1px red;
+}
+h1, h2, h3, .block-title {
+	color: blue;
+}
+a, a:link, #name-and-slogan a {
+	color: red;
+}
+a:hover, a:active, a.is-active, ul.menu a.is-active {
+	color: green;
+}
+.pure-menu-link {
+	color: white !important;
+	background: green;
+}
+.pure-menu-link:hover, .pure-menu-link:focus {
+	background: magenta;
+}
+.pure-menu-children a:hover, .pure-menu-children a:focus {
+	background: magenta;
+}
+.pure-menu-children .pure-menu-link {
+	background: green;
+	border: 1px solid;
+	border-color: red yellow blue lime;
+}
+.menu-toggle .bars {
+	background: #000;
+}
+
+@media screen and (max-width: 48em) {
+	.pure-menu-link, .pure-menu-children,
+	.pure-menu-children .pure-menu-link {
+		color: green !important;
+		background: none;
+		border: none;
+	}
+	.pure-menu-link:hover,
+	.pure-menu-link:focus,
+	.pure-menu-children a:hover,
+	.pure-menu-children a:focus {
+		color: black !important;
+		background: acqua;
+	}
+}
+*/
+
+
+/************************/
+/* CHANGE LOGO POSITION */
+/************************/
+/*
+.logoimg {
+	padding: .5em 1em;
+}*/
+
+
+/**********************/
+/* ROUND USER PICTURE */
+/**********************/
+
+.field--name-user-picture img {
+  border-radius: 100% !important;
+}
+
+
+/**********************************/
+/* CHANGES MENU TOGGLE BARS COLOR */
+/**********************************/
+
+.menu-toggle { background: #ffd; }
+.menu-toggle .bars { background: #900; }
+
+
+/*************************/
+/* DROP DOWN ADJUSTMENTS */
+/*************************/
+
+/* no dropdown shadows */
+/*
+.pure-menu-children {
+	box-shadow: none;
+}*/
+
+/* big arrows */
+/*
+.pure-menu-horizontal .pure-menu-has-children > .pure-menu-link:after {
+	content: "\25BC";
+}
+.pure-menu-has-children .pure-menu-has-children > .pure-menu-link:after {
+	content: "\25B6";
+}*/
+
+
+/**************************/
+/* INDIVIDUAL MENU COLORS */
+/**************************/
+/* Uncomment the following lines to have different colors for menu items. */
+
+/* First & last level-1 menu items */
+
+.first .primary-nav__menu-link--level-1 {
+  background: #144469;
+  background-image: url("../images/home.png");
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: center;
+}
+.first .primary-nav__menu-link--level-1:hover  {
+  background: #54a8e3;
+  background-image: url("../images/home3.png");
+
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: center;
+
+}
+.last .primary-nav__menu-link--level-1 {
+  background: #144469;
+  height: 20px;
+  padding-top: 10px;
+}
+.last .pure-menu-link:hover, .last .pure-menu-link:focus {
+  background: #54a8e3;
+  cursor: pointer;
+
+}
+
+/* Middle menu items */
+
+.pure-menu-link {
+  background: #144469;
+  height: 20px;
+  padding-top: 10px;
+
+
+}
+
+/* Children color */
+
+.pure-menu-children .pure-menu-link {
+  color: #144469 !important;
+  background: YYY;
+  height: 20px;
+  padding-top: 10px;
+}
+
+
+/******************************/
+/* HIDE some TITLES, READMORE */
+/******************************/
+/* Uncomment the first declaration below to hide all titles on the front page
+   Addapt the second declaration to hide a node type titles on the frontpage.
+   Third one is for no "Read more" on the front page. */
+/*
+.front #main h2 .field--name-title { display: none; }
+.front #main .node--type-article h2 .field--name-title { display: none; }
+.front .node-readmore { display: none; }
+*/
+
+
+/**********************************/
+/* IMAGE POSITION for ALL CONTENT */
+/**********************************/
+.field-item .pure-img,
+.colorbox .pure-img {
+  float: left; /* LTR */
+  margin: 0 1em 1em 0; /* LTR */
+}
+[dir="rtl"] .field-item .pure-img,
+[dir="rtl"] .colorbox .pure-img {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+
+
+/***********************************/
+/* IMAGE POSITION per CONTENT TYPE */
+/***********************************/
+/*
+.node-book .field-item .pure-img,
+.node-book .colorbox .pure-img {
+	float: right;
+	margin: .6em 0 .6em .6em;
+}
+.node-blog_post .field-item .pure-img,
+.node-blog_post .colorbox .pure-img {
+	float: right;
+	margin: .6em 0 .6em .6em;
+}*/
+
+
+/*************************/
+/* CENTERED BLOCK IMAGES */
+/*************************/
+/*
+.block img:not(.region-content img, .region-header img) {
+	margin: 0 auto;
+}*/
+
+
+/********************************/
+/* BORDER FOR NON-THEMED BLOCKS */
+/********************************/
+#sidebar-left .block, #sidebar-right .block {
+  border: 1px solid #ddd;
+}
+
+
+/*******************************/
+/* UPDATE ICONS FOR NEW BLOCKS */
+/*******************************/
+/* where ID is the block id */
+/*
+#ID .block-icon {
+	background: transparent url(../images/icons/blocks/icon_35_48.png) no-repeat;
+}*/
+
+
+/****************************************/
+/* USER BLOCKS EQUAL VERTICAL ALIGNMENT */
+/****************************************/
+/*
+@media screen and (min-width: 48em) {
+	#section1 .block {
+		min-height: 250px;
+	}
+}*/
+
+
+/******************************/
+/* BRANDING BLOCK WIDTH LIMIT */
+/******************************/
+.block-system-branding-block {
+  max-width: 50em;
+}
+
+
+/***********************/
+/* CHANGE HEADER IMAGE */
+/***********************/
+/* Deactivate the image rotator in theme's settings, put your new image in
+   the _custom folder and uncomment the lines below */
+
+.himg #headimg, #headimg {
+  background: #096d9f;
+  background-image: url("../images/FEM-bco.png");
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: right;
+  border-right: 20px solid transparent;
+
+}
+
+
+/************************/
+/* OTHER SOCIAL NETWORK */
+/************************/
+#soclinks .myother {
+  background: transparent url(../images/icons/blocks/icon_35_32.png) no-repeat center center;
+}
+
+
+/*****************************************************/
+/* Bad alignment of Author and Date line in Drupal 8 */
+/*****************************************************/
+/*
+.node__submitted, p.comment__submitted {
+	display: flex;
+}
+.node__submitted .field, p.comment__submitted .field, p.comment__submitted a {
+	margin: 0 .3em;
+}*/
+
+
+.form-text, .form-email {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.breadcrumb {
+  display: none;
+}
+.tit_slider {
+  position: relative;
+  top: 0px;
+}
+.views-field-title {
+  background-color: #0e83cd;
+  position: relative;
+  bottom: 54px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 30px;
+  letter-spacing: 1.8px;
+  word-spacing: 5px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  padding: 10px 0px 10px 10px;
+  opacity: 0.6;
+  border-radius: 0px 0px 10px 10px;
+}
+.views-field-title a, a:link {
+  border-bottom: none;
+  color: inherit;
+  opacity: initial;
+}
+.views_slideshow_cycle_teaser_section {
+  width: 100% !important;
+}
+.views_slideshow_cycle_slide {
+  width: 100% !important;
+  object-fit: cover;
+  object-position: bottom;
+  height: 300px;
+}
+.views-field-field-photos img {
+  width: 100% !important;
+}
+.views-field-field-image img {
+  min-height: 300px;
+  width: 1080px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.region-highlighted {
+  padding: 0 !important;
+  border: none;
+}
+.views-slideshow-controls-top {
+  height: 0px;
+  display: block;
+}
+/* prev and next btns */
+.views_slideshow_controls_text_previous {
+  display: inline-block;
+  position: relative;
+  float: left;
+  background-color: rgba(228, 231, 231, 0.25);
+  border: solid 1px rgba(201, 199, 199, 0);
+  padding: 5px;
+  cursor: pointer;
+  left: 2px;
+  top: 220px;
+  color: white;
+  z-index: 5000;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  font-size: 0;
+  background-image: url("../images/left.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+.views_slideshow_controls_text_previous:hover {
+  background-color: rgba(228, 231, 231, 0.5);
+  opacity: 1;
+}
+.views_slideshow_controls_text_pause {
+  display: none;
+}
+.views_slideshow_controls_text_next {
+  display: inline-block;
+  position: relative;
+  float: right;
+  top: 220px;
+  background-color: rgba(228, 231, 231, 0.25);
+  border: solid 1px rgba(201, 199, 199, 0);
+  padding: 5px;
+  cursor: pointer;
+  right: 2px;
+  color: white;
+  z-index: 5000;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  font-size: 0;
+  background-image: url("../images/rigth.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+.views_slideshow_controls_text_next:hover {
+  background-color: rgba(228, 231, 231, 0.5);
+  opacity: 1;
+}
+#middlecontainer .block {
+  margin-bottom: 60px;
+}
+
+h2, .block-content h1, .container-footer .titulo, .container-footer .titulo2 {
+  padding: 20px 20px 20px 10px;
+  line-height: 1;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 25px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: none;
+  background: #12486b;
+  background: -moz-linear-gradient(left, #12486b 0%, #1c6ea4 50%, #ccd1ff 100%);
+  background: -webkit-linear-gradient(left, #12486b 0%, #1c6ea4 50%, #ccd1ff 100%);
+  background: linear-gradient(to right, #12486b 0%, #1c6ea4 50%, #ccd1ff 100%);
+}
+ .views-element-container .node__content {
+  display: grid;
+  grid-template-columns: 1fr 0.2fr 1.8fr;
+  grid-template-rows: 2.4fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "image txt txt"
+    "link link link";
+}
+.image-style-wide {
+ /* height: 500px;*/
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+ .views-element-container .node__content .field--name-field-image {
+  grid-area: image;
+  padding: 10px;
+}
+.views-element-container .node__content .field--name-field-image img {
+  border-radius: 5%;
+}
+.views-element-container .node__content .field--name-field-link {
+  grid-area: link;
+  padding: 10px;
+}
+.views-element-container .node__content .field--name-field-link a {
+  color: #12486b;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.views-element-container .node__content .field--name-body {
+  grid-area: txt;
+}
+#block-info-contacto h2 {
+  padding: 10px;
+  margin: 0;
+}
+#block-info-contacto {
+  margin-bottom: 10px !important;
+
+}
+#block-info-eventos h2 {
+  padding: 10px;
+  margin: 0;
+}
+.search-block-form, #block-info-eventos, #block-nbf {
+  margin-bottom: 10px !important;
+}
+#block-canal-yt-2, #block-revistasomosmedicos, #block-album {
+  margin-bottom: 10px !important;
+  border: #0a65aa solid 1px !important;
+  border-radius: 5px !important;
+  background-color: white !important;
+  background-image: none !important;
+  padding: 0px !important;
+}
+#block-canal-yt-2 .field--name-body, #block-revistasomosmedicos .field--name-body, #block-album .field--name-body {
+  margin: 0px !important;
+  padding-bottom: 5px !important;
+  padding-top: 5px !important;
+}
+.field--name-title{
+  color: white !important;
+}
+/***********************/
+/* New Footer */
+/***********************/
+.container-footer {
+  display: grid;
+  grid-template-columns: 0.3fr 1.7fr 0.2fr 1.8fr;
+  grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr;
+  gap: 10px 10px;
+  grid-template-areas:
+    "titulo titulo titulo2 titulo2"
+    "fb facebook dir direccion"
+    "ln linkedin tl telefono"
+    "in instagram ml mail";
+}
+.container-footer .titulo2 {
+  grid-area: titulo2;
+  margin: 10px;
+}
+.container-footer .titulo {
+  grid-area: titulo;
+  margin: 10px;
+}
+
+.container-footer .fb, .container-footer .ln, .container-footer .in, .container-footer .dir, .container-footer .tl, .container-footer .ml, .container-footer .facebook, .container-footer .direccion, .container-footer .telefono, .container-footer .linkedin, .container-footer .instagram, .container-footer .mail {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 17px;
+  letter-spacing: -0.2px;
+  word-spacing: 2px;
+  color: #183483;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: italic;
+  font-variant: normal;
+  text-transform: none;
+}
+.container-footer .fb {
+  grid-area: fb;
+  background-image: url("../images/icons/fbp.png");
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  background-position: right;
+
+}
+.container-footer .ln { grid-area: ln; background-image: url("../images/icons/lip.png");
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  background-position: right;}
+.container-footer .in { grid-area: in; background-image: url("../images/icons/inp.png");
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  background-position: right;}
+.container-footer .dir { grid-area: dir; background-image: url("../images/icons/dirp.png");
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  background-position: right;}
+.container-footer .tl { grid-area: tl; background-image: url("../images/icons/telp.png");
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  background-position: right;}
+.container-footer .ml { grid-area: ml; background-image: url("../images/icons/mlp.png");
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  background-position: right;}
+.container-footer .facebook { grid-area: facebook; padding: 7px; padding-left: 0px}
+.container-footer .direccion { grid-area: direccion; padding: 7px; padding-left: 0px}
+.container-footer .telefono { grid-area: telefono; padding: 7px; padding-left: 0px}
+.container-footer .linkedin { grid-area: linkedin; padding: 7px; padding-left: 0px}
+.container-footer .instagram { grid-area: instagram; padding: 7px; padding-left: 0px}
+.container-footer .mail { grid-area: mail; padding: 7px; padding-left: 0px}
+
+.menu-wrapper {
+  position: relative;
+  z-index: 99999 !important;
+}
+.pure-menu-children .pure-menu-link{
+  color: #fff !important;
+}
+.pure-menu-link{
+  color: #fff !important;
+}
+#mission{
+  height: 550px !important;
+}
+/***********************/
+/* CHANGEs for MOBILES */
+/***********************/
+
+@media screen and (max-width: 450px) {
+
+  /* HEADER IMAGE */
+  /* You can change images rotator with a static image like "mobi-dot.png" or
+    "mobi-sq.png", use your own, or simply none. */
+  /*
+  .himg #headimg, #headimg {
+    background: #fff url(../images/mobi-dot.png) repeat;
+  }
+  */
+  /* Increase contrast for header when Header image rotator is enabled */
+  /*
+  .himg #header {
+    background: rgba(255, 255, 255, 0.5);
+  }*/
+  /* Increase contrast for site title */
+  /*
+  .himg .block-system-branding-block {
+    background: rgba(255, 255, 255, 0.5);
+  }*/
+  .himg #headimg, #headimg {
+    background: #096d9f;
+    background-image: url("../images/FEM-bco-co.png");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: 80%;
+
+  }
+  .views_slideshow_cycle_slide {
+    height: 200px;
+  }
+  .views_slideshow_cycle_main {
+    height: 200px;
+  }
+  .views_slideshow_cycle_teaser_section {
+    height: 200px;
+  }
+  .image-style-flexslider-full {
+    height: 200px;
+  }
+  .views-field-field-image img {
+    min-height: 200px;
+  }
+  .views_slideshow_controls_text_next {
+    top: 80px;
+  }
+  .views_slideshow_controls_text_previous {
+    top: 80px;
+  }
+  .pure-menu-children .pure-menu-link{
+    color: #fff !important;
+  }
+  #mission{
+    height: 200px !important;
+  }
+
+}
+@media screen and (min-width: 451px) and (max-width: 800px) {
+
+  /* SLIDER */
+  .views_slideshow_cycle_slide {
+    height: 350px;
+  }
+  .views_slideshow_cycle_main {
+    height: 350px;
+  }
+  .views_slideshow_cycle_teaser_section {
+    height: 350px;
+  }
+  .image-style-flexslider-full {
+    height: 350px;
+  }
+  .views-field-field-image img {
+    min-height: 350px;
+  }
+  .views_slideshow_controls_text_next {
+    top: 110px;
+  }
+  .views_slideshow_controls_text_previous {
+    top: 110px;
+  }
+  .pure-menu-children .pure-menu-link{
+    color: #fff !important;
+  }
+  #mission{
+    height: 340px !important;
+  }
+
+}
+
